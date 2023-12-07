@@ -4,12 +4,6 @@ body {
   box-sizing: border-box;
 }
 
-@media screen and (min-width:1400px) {
-  body {
-    width: 100vh;
-  }
-}
-
 @media screen and (max-width: 420px) {
   body {
     width: 100vh;
