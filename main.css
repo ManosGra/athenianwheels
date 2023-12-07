@@ -4,6 +4,12 @@ body {
   box-sizing: border-box;
 }
 
+@media screen and (max-width:1400px) {
+  body {
+    width: 100vw;
+  }
+}
+
 .box {
   opacity: 0;
   transform: translateY(20px);
