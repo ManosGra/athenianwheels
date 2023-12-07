@@ -858,7 +858,7 @@ footer {
 
 @media screen and (max-width: 420px) {
   footer {
-    width: 100vh;
+    width: 100vw;
     text-align: center !important;
   }
 }
