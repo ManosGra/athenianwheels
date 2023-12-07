@@ -4,12 +4,6 @@ body {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 420px) {
-  body {
-    width: 100vh;
-  }
-}
-
 .box {
   opacity: 0;
   transform: translateY(20px);
@@ -54,7 +48,8 @@ header.active {
 @media screen and (max-width: 992px) {
   header {
     display: none;
-  }
+    width: 100vw;
+  } 
 }
 
 .item-list {
