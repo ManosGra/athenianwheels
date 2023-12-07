@@ -274,7 +274,8 @@ header.active {
   transform-origin: center;
   transform-style: preserve-3d;
   transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
-  -webkit-box-reflect: below 5px linear-gradient(transparent, transparent, #004);
+  -webkit-box-reflect: below 5px linear-gradient(transparent, transparent, #004) ;
+  overflow: hidden;
 }
 
 .image-slider-box span img {
