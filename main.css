@@ -269,7 +269,7 @@ header.active {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 100%;
   transform-origin: center;
   transform-style: preserve-3d;
@@ -463,12 +463,6 @@ header.active {
     padding: 0;
   }
 
-  .main-content-left .row {
-    .col-md-6:first-child {
-      order: 2;
-    }
-  }
-
   .main-content-left p {
     margin: 0;
     padding: 0;
@@ -485,12 +479,6 @@ header.active {
   .main-content-left h2 {
     margin-top: 25px;
     margin-bottom: 20px;
-  }
-
-  .main-content-left .row {
-    .col-md-6:first-child {
-      order: 2;
-    }
   }
 
   .main-content-left p {
@@ -515,12 +503,6 @@ header.active {
   .main-content-left p {
     padding: 0 !important;
     margin: 0 !important;
-  }
-
-  .main-content-left .row {
-    .col-md-6:first-child {
-      order: 2;
-    }
   }
 
 }
