@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AthenianWheels</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Roboto:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header m-0 py-4 w-100">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-4 col-md-2">
+                    <div class="logo">
+                        <a href="#" class="m-0 text-decoration-none text-white">Logo</a>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-8">
+                    <ul class="p-0 m-0 text-white d-flex flex-row align-items-center justify-content-around">
+
+                        <li class=" item-list p-0 list-unstyled"><a href="/#overview"
+                                class="text-decoration-none text-white">Overview</a>
+                        </li>
+
+                        <li class="p-0 list-unstyled item-list"><a href="/#expect"
+                                class="text-decoration-none text-white">What to
+                                expect</a>
+                        </li>
+
+                        <li class="p-0 m-0 list-unstyled item-list"><a href="/#tour"
+                                class="text-decoration-none text-white">The
+                                Trip</a>
+                        </li>
+
+                        <li class="p-0  list-unstyled item-list"><a href="/#included"
+                                class="text-decoration-none text-white">What's
+                                included</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-2 text-end col-md-2">
+                    <button id="openModal" class="text-decoration-none button">Contact
+                        us</button>
+                </div>
+            </div>
+    </header>
+
+    <div class="responsive-header">
+        <div class="container-lg">
+            <div class="d-flex flex-row justify-content-between align-items-center">
+                <div class="col-4">
+                    <button class="hamburger">
+                        <div class="bar"></div>
+                    </button>
+                </div>
+                <div class="col-4 text-center">
+                    <div class="logo">
+                        <a href="#" class="m-0 text-decoration-none text-white">Logo</a>
+                    </div>
+                </div>
+                <div class="col-4 text-end">
+                    <button id="openModalResponsive" class="text-decoration-none button">Contact us</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mobile-nav" id="responsiveNav">
+        <div class="container-lg">
+            <div class="d-flex flex-column align-items-start text-uppercase f-bold pt-4">
+                <a href="#overview" class="mb-4 text-decoration-none text-white">Overview</a>
+                <a href="#expect" class="mb-4 text-decoration-none text-white">What to expect</a>
+                <a href="#tour" class="mb-4 text-decoration-none text-white">The Trip</a>
+                <a href="#included" class="mb-4 text-decoration-none text-white">What's included</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="hero">
+        <div class="hero-content">
+            <div class="container-lg w-100 h-100 text-center">
+                <h1 class="text-uppercase text-white d-flex flex-column justify-content-center h-100  box show">Cabrio
+                    day trip to Athens Riviera</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-start box show">
+        <div class="container-lg">
+            <h1 class="text-center mb-5 f-bold">Why book with us?</h1>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-3">
+                    <div class="main-text text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="35" fill="currentColor"
+                            class="bi bi-calendar4" viewBox="0 0 16 16">
+                            <path
+                                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z" />
+                        </svg>
+                        <h5 class="pt-4 f-bold">Reserve now, pay later</h5>
+                        <p>Book your spot</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="main-text text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="35" fill="currentColor"
+                            class="bi bi-ticket-detailed" viewBox="0 0 16 16">
+                            <path
+                                d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5ZM5 7a1 1 0 0 0 0 2h6a1 1 0 1 0 0-2H5Z" />
+                            <path
+                                d="M0 4.5A1.5 1.5 0 0 1 1.5 3h13A1.5 1.5 0 0 1 16 4.5V6a.5.5 0 0 1-.5.5 1.5 1.5 0 0 0 0 3 .5.5 0 0 1 .5.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 11.5V10a.5.5 0 0 1 .5-.5 1.5 1.5 0 1 0 0-3A.5.5 0 0 1 0 6V4.5ZM1.5 4a.5.5 0 0 0-.5.5v1.05a2.5 2.5 0 0 1 0 4.9v1.05a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-1.05a2.5 2.5 0 0 1 0-4.9V4.5a.5.5 0 0 0-.5-.5h-13Z" />
+                        </svg>
+                        <h5 class="pt-4  f-bold">Free cancellation</h5>
+                        <p>Stay flexible on your trip</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="main-text text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="35" fill="currentColor"
+                            class="bi bi-car-front" viewBox="0 0 16 16">
+                            <path
+                                d="M4 9a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm10 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM4.862 4.276 3.906 6.19a.51.51 0 0 0 .497.731c.91-.073 2.35-.17 3.597-.17 1.247 0 2.688.097 3.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 10.691 4H5.309a.5.5 0 0 0-.447.276Z" />
+                            <path
+                                d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM4.82 3a1.5 1.5 0 0 0-1.379.91l-.792 1.847a1.8 1.8 0 0 1-.853.904.807.807 0 0 0-.43.564L1.03 8.904a1.5 1.5 0 0 0-.03.294v.413c0 .796.62 1.448 1.408 1.484 1.555.07 3.786.155 5.592.155 1.806 0 4.037-.084 5.592-.155A1.479 1.479 0 0 0 15 9.611v-.413c0-.099-.01-.197-.03-.294l-.335-1.68a.807.807 0 0 0-.43-.563 1.807 1.807 0 0 1-.853-.904l-.792-1.848A1.5 1.5 0 0 0 11.18 3H4.82Z" />
+                        </svg>
+                        <h5 class="pt-4 f-bold">Pickup at your place</h5>
+                        <p>Select a pickup point</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="main-text text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="35" fill="currentColor"
+                            class="bi bi-clock" viewBox="0 0 16 16">
+                            <path
+                                d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z" />
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z" />
+                        </svg>
+                        <h5 class="pt-4  f-bold">4 to 10 hours (approx.)</h5>
+                        <p>Full day experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider-container d-flex flex-row justify-content-center box show" id="gallery">
+
+        <div class="image-slider-box ">
+            <span style="--i:1;"><img src="6.png"></span>
+            <span style="--i:2;"><img src="b1.jpg"></span>
+            <span style="--i:3;"><img src="3.jpg"></span>
+            <span style="--i:4;"><img src="image.jpg"></span>
+            <span style="--i:5;"><img src="kastela.jpg"></span>
+            <span style="--i:6;"><img src="limni.jpg"></span>
+            <span style="--i:7;"><img src="athensr.jpg"></span>
+            <span style="--i:8;"><img src="Riviera.jpg"></span>
+        </div>
+
+        <div class="btns">
+            <div class="btn prev d-flex flex-row justify-content-center align-items-center"></div>
+            <div class="btn next d-flex flex-row justify-content-center align-items-center "></div>
+        </div>
+    </div>
+
+    <div class="content box show">
+        <div class="container-lg">
+            <div class="row flex-column align-items-center">
+                <div class="col-12">
+                    <div class="section-header-mission">
+                        <h2 class="f-bold text-center mb-5" id="overview">OVERVIEW</h2>
+                        <span class="header-span"></span>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="main-text text-center">
+                        <p>Embark on a captivating journey through the rich history and breathtaking
+                            landscapes of the Athens
+                            Riviera. Our road trip adventure promises an unforgettable exploration of iconic sites,
+                            including
+                            the majestic Temple of Poseidon in Sounio and the historic wonders of Athens itself. Get
+                            ready
+                            to
+                            immerse yourself in the timeless allure of ancient Greek culture and the stunning beauty of
+                            the
+                            Aegean Sea.</p>
+
+                        <p>As we traverse the scenic coastal route along the Athens Riviera, you'll
+                            witness the fusion of
+                            modern luxury and ancient charm that defines this enchanting region. Our ultimate
+                            destination is
+                            the
+                            Temple of Poseidon at Cape Sounio, a masterpiece of classical architecture perched on the
+                            cliffs
+                            overlooking the azure waters of the Aegean. Feel the magic of standing where ancient Greeks
+                            once
+                            worshiped, while enjoying panoramic views that extend to the distant horizon.</p>
+
+                        <p>After basking in the aura of Poseidon's temple, we'll return to Athens for a
+                            comprehensive city
+                            tour. Uncover the layers of history at the Acropolis, where the Parthenon stands as a
+                            testament
+                            to
+                            the glory of ancient Athens. Stroll through the charming Plaka district, with its
+                            labyrinthine
+                            streets and vibrant atmosphere, offering a taste of both tradition and modernity.</p>
+
+                        <p>Join us on this road trip to Athens Riviera, where every twist and turn reveals
+                            a new chapter in the
+                            fascinating story of Greece. Immerse yourself in the wonders of the past, savor the present,
+                            and
+                            create memories that will linger long after the journey ends.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content-left  box show">
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="content-text">
+                        <div class="section-header">
+                            <h2 class="f-bold text-center mb-5" id="expect">WHAT TO EXPECT</h2>
+                            <span class="header-span"></span>
+                        </div>
+
+                        <p class="text-center">
+                            Escape the hustle and bustle of the city with a seamless full-day private tour, exploring
+                            the Athenian Riviera and Cape Sounio. Experience the invigorating breeze in your hair as you
+                            journey from your Athens hotel to the picturesque coast in a convertible car. Enjoy
+                            leisurely stops for swimming and capturing stunning moments. As the day unfolds, witness the
+                            breathtaking sunset at the iconic Temple of Poseidon in Cape Sounio. Benefit from
+                            hassle-free hotel pickup, travel in comfort in a convertible, and savor the freedom to
+                            explore at your own pace. Marvel at the enchanting views of the Temple of Poseidon as the
+                            sun sets, making this a truly unforgettable adventure.
+                        </p>
+                    </div>
+
+                    <div class="text-center py-5">
+                        <a class="info text-decoration-none f-bold"
+                            href="https://www.viator.com/tours/Athens/All-day-trips-around-Greece-using-a-convertible-cabriolet-car/d496-319349P1?mcid=56757"
+                            target="_blank">BOOK WITH US</a>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="content-image">
+                        <img class="img-fluid" src="3.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content-right  box show">
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="content-image">
+                        <img class="img-fluid" src="temple.jpg">
+                    </div>
+                </div>
+
+                <div class="col-md-6 ">
+                    <div class="content-text">
+                        <div class="section-header-tour">
+                            <h2 class="f-bold text-center mb-5" id="tour">THE TRIP</h2>
+                            <span class="header-span"></span>
+                        </div>
+
+                        <p class="text-center">
+                            Embark on a scenic journey along the renowned "Athens Riviera," starting with pickups from
+                            our
+                            guests' locations. We'll traverse captivating spots such as Vouliagmeni Lake, Limanakia,
+                            Mavro
+                            Lithari, and Saronida before reaching the majestic Temple of Poseidon at Sounio. Along the
+                            way,
+                            indulge in opportunities for swimming, photography, and soaking in the breathtaking views.
+                            Ample
+                            time awaits to explore the Temple and relish the mesmerizing sunset. Our return follows the
+                            same
+                            picturesque route, ensuring a convenient drop-off at our guests' chosen locations.
+                        </p>
+                    </div>
+
+                    <div class="text-center py-5">
+                        <a class="info text-decoration-none f-bold"
+                            href="https://www.viator.com/tours/Athens/All-day-trips-around-Greece-using-a-convertible-cabriolet-car/d496-319349P1?mcid=56757"
+                            target="_blank">READ MORE ABOUT CABRIO DAY TRIP</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-end box show">
+        <div class="container-lg">
+            <hr>
+            <h2 class="text-center my-4 f-bold text-center" id="included">What's included</h2>
+            <ul class="d-flex flex-row align-items-center p-0 m-0 justify-content-center">
+                <li class="items list-unstyled mx-3 d-flex flex-row align-items-center me-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-check" viewBox="0 0 16 16">
+                        <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                    </svg>Coffee/tea,water
+                </li>
+
+                <li class="items list-unstyled mx-3 d-flex flex-row align-items-center">
+                    <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
+                        class="icon__3e6C icon__15Eg greyCross__2ICl">
+                        <path
+                            d="M3.97 14.97a.75.75 0 101.06 1.06L10 11.06l4.97 4.97a.75.75 0 101.06-1.06L11.06 10l4.97-4.97a.75.75 0 00-1.06-1.06L10 8.94 5.03 3.97a.75.75 0 00-1.06 1.06L8.94 10l-4.97 4.97z">
+                        </path>
+                    </svg>Coffee/tea,water
+                </li>
+            </ul>
+
+            <hr>
+
+            <h2 class="text-center my-4 f-bold text-center" id="overview">Additional Info</h2>
+            <div class="row items text-center">
+                <div class="col-md-12">
+                    <div class="items">
+                        <ul class="mb-0">
+                            <li class="mb-3  list-unstyled"> Monday - Sunday : 09:00 AM - 08:00 PM</li>
+                            <li class="mb-3 list-unstyled">Confirmation will be received at time of booking</li>
+                            <li class="mb-3 list-unstyled">This is a private tour/activity. Only your group will
+                                participate</li>
+                            <li class="mb-3 list-unstyled">Near public transportation</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <ul>
+                        <li class="mb-3 list-unstyled">Most travelers can participate</li>
+                        <li class="mb-3 list-unstyled">Not wheelchair accessible</li>
+                        <li class="mb-3 list-unstyled">Service animals allowed</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+        </div>
+    </div>
+
+    <div class="contact d-flex flex-column justify-content-center align-items-center" id="modal">
+        <div class="modal-inner">
+            <h2 class="mb-4 f-bold text-white text-center">Contact us</h2>
+            <form action="#">
+                <div class="input-box">
+                    <div class="input-field field">
+                        <p class="text-white mb-1 mt-3 f-bold">YOUR NAME*</p>
+                        <input type="text" id="name" class="item w-100" autocomplete="off">
+                        <div class="error-txt f-bold mt-1">Name can't be blank</div>
+                    </div>
+
+                    <div class="input-field field">
+                        <p class="text-white mb-1 mt-4 f-bold">YOUR EMAIL*</p>
+                        <input type="text" id="email" class="item w-100" autocomplete="off">
+                        <div class="error-txt email f-bold mt-1">Email can't be blank</div>
+                    </div>
+                </div>
+
+                <div class="textarea-field field">
+                    <p class="text-white mb-1 mt-4 f-bold">SUBJECT*</p>
+                    <textarea name="" id="message" class="w-100 item" cols="30" rows="10"></textarea>
+                    <div class="error-txt f-bold">Subject can't be blank</div>
+                </div>
+
+                <div class="input-field field">
+                    <input type="checkbox" id="myCheckbox" autocomplete="off">
+                    <label for="myCheckbox" class="item checkbox"> By clicking this, you accept the <a
+                            href="privacy.html">privacy
+                            policy*</a></label>
+                    <div class="danger-txt f-bold">You must accept the privacy policy</div>
+                </div>
+
+                <div class="g-recaptcha" data-sitekey="6LeQzygpAAAAACXyyZOC_JQ6nvUifAi-rZuQt4Rt"></div>
+
+                <div class="d-flex flex-row justify-content-between align-items-center">
+                    <a href="#" class="f-bold text-decoration-none button" id="closeModal">CLOSE</a>
+                    <button class="f-bold button" type="submit">SEND MESSAGE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container-lg">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-md-auto order-md-first order-last">
+                    <p class="copyright-tex text-white p-0 m-0">2023 ©Athenian Wheels. All rights reserved.
+                    </p>
+                </div>
+
+                <div class="col-md-auto ">
+                    <a href="privacy.html" class=" text-white m-0 p-0">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
