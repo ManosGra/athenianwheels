@@ -4,18 +4,6 @@ body {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 420px) {
-  body {
-    width: 100vh;
-  }
-}
-
-@media screen and (max-width: 575px) {
-  body {
-    width: 100vh;
-  }
-}
-
 .box {
   opacity: 0;
   transform: translateY(20px);
