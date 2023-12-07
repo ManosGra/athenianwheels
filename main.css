@@ -463,6 +463,12 @@ header.active {
     padding: 0;
   }
 
+  .main-content-left .row {
+    .col-md-6:first-child {
+      order: 2;
+    }
+  }
+
   .main-content-left p {
     margin: 0;
     padding: 0;
@@ -479,6 +485,12 @@ header.active {
   .main-content-left h2 {
     margin-top: 25px;
     margin-bottom: 20px;
+  }
+
+  .main-content-left .row {
+    .col-md-6:first-child {
+      order: 2;
+    }
   }
 
   .main-content-left p {
@@ -503,6 +515,12 @@ header.active {
   .main-content-left p {
     padding: 0 !important;
     margin: 0 !important;
+  }
+
+  .main-content-left .row {
+    .col-md-6:first-child {
+      order: 2;
+    }
   }
 
 }
