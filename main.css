@@ -700,6 +700,7 @@ img {
     font-size: 25px;
     letter-spacing: 0.6px;
     opacity: 0;
+    width: 100vw;
   }
 
   .contact.open {
