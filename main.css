@@ -689,6 +689,10 @@ img {
   }
 }
 
+.item .checkbox {
+  font-size: 10px!important;
+}
+
 @media screen and (max-width: 768px) {
   .modal-inner h2 {
     font-size: 33px;
