@@ -6,13 +6,13 @@ body {
 
 @media screen and (max-width: 420px) {
   body {
-    width: 100vh;
+    width: 100vw;
   }
 }
 
 @media screen and (max-width: 575px) {
   body {
-    width: 100vh;
+    width: 100vw;
   }
 }
 
