@@ -702,7 +702,6 @@ img {
 
 @media screen and (max-width: 420px) {
   .contact {
-    font-size: 25px;
     letter-spacing: 0.6px;
     opacity: 0;
   }
@@ -713,7 +712,7 @@ img {
   }
 
   .modal-inner {
-    min-width: 350px;
+    min-width: 350px!important;
   }
 
   .modal-inner h2 {
