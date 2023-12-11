@@ -231,7 +231,7 @@ header.active {
   }
 }
 
-.hero-items{
+.hero-items {
   padding: 160px 0px 90px;
 }
 
@@ -712,7 +712,7 @@ img {
   }
 
   .modal-inner {
-    min-width: 350px!important;
+    min-width: 350px !important;
   }
 
   .modal-inner h2 {
@@ -785,7 +785,7 @@ h1 {
 @media screen and (max-width: 992px) {
   h1 {
     font-family: 'Archivo Black', sans-serif;
-    font-size: 60px !important;
+    font-size: 43px !important;
   }
 }
 
@@ -866,7 +866,7 @@ footer {
     text-align: center !important;
   }
 
-  footer p{
+  footer p {
     font-size: 15px;
   }
 }
