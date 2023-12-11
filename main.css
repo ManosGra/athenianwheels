@@ -683,7 +683,7 @@ img {
 
   .danger-txt {
     color: #d93025;
-    margin-top: -5px;
+    margin-top: 2px;
     font-size: 10px;
     letter-spacing: 0.8px;
     opacity: 0;
