@@ -14,6 +14,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <link href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-dark@4/dark.css" rel="stylesheet">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -31,21 +32,21 @@
                 <div class="col-6 col-md-8">
                     <ul class="p-0 m-0 text-white d-flex flex-row align-items-center justify-content-around">
 
-                        <li class=" item-list p-0 list-unstyled"><a href="#overview"
+                        <li class=" item-list p-0 list-unstyled"><a href="/#overview"
                                 class="text-decoration-none text-white">Overview</a>
                         </li>
 
-                        <li class="p-0 list-unstyled item-list"><a href="#expect"
+                        <li class="p-0 list-unstyled item-list"><a href="/#expect"
                                 class="text-decoration-none text-white">What to
                                 expect</a>
                         </li>
 
-                        <li class="p-0 m-0 list-unstyled item-list"><a href="#tour"
+                        <li class="p-0 m-0 list-unstyled item-list"><a href="/#tour"
                                 class="text-decoration-none text-white">The
                                 Trip</a>
                         </li>
 
-                        <li class="p-0  list-unstyled item-list"><a href="#included"
+                        <li class="p-0  list-unstyled item-list"><a href="/#included"
                                 class="text-decoration-none text-white">What's
                                 included</a>
                         </li>
@@ -93,9 +94,12 @@
 
     <div class="hero">
         <div class="hero-content">
-            <div class="container-lg w-100 h-100 text-center">
-                <h1 class="text-uppercase text-white d-flex flex-column justify-content-center h-100  box show">Cabrio
+            <div class=" w-100 h-100 text-center d-flex flex-column justify-content-center">
+                <h1 class="text-uppercase text-white h-100  box show">Cabrio
                     day trip to Athens Riviera</h1>
+                <div class="scroll-btn">
+                    asdasdasd
+                </div>
             </div>
         </div>
     </div>
@@ -163,8 +167,8 @@
     <div class="slider-container d-flex flex-row justify-content-center box show" id="gallery">
 
         <div class="image-slider-box ">
-            <span style="--i:1;"><img src="b1.jpg"></span>
-            <span style="--i:2;"><img src="6.png"></span>
+            <span style="--i:1;"><img src="6.png"></span>
+            <span style="--i:2;"><img src="b1.jpg"></span>
             <span style="--i:3;"><img src="3.jpg"></span>
             <span style="--i:4;"><img src="image.jpg"></span>
             <span style="--i:5;"><img src="kastela.jpg"></span>
@@ -258,7 +262,7 @@
                     <div class="text-center py-5">
                         <a class="info text-decoration-none f-bold"
                             href="https://www.viator.com/tours/Athens/All-day-trips-around-Greece-using-a-convertible-cabriolet-car/d496-319349P1?mcid=56757"
-                            target="_blank">BOOK WITH VIATOR</a>
+                            target="_blank">BOOK WITH US</a>
                     </div>
                 </div>
 
@@ -305,7 +309,7 @@
                     <div class="text-center py-5">
                         <a class="info text-decoration-none f-bold"
                             href="https://www.viator.com/tours/Athens/All-day-trips-around-Greece-using-a-convertible-cabriolet-car/d496-319349P1?mcid=56757"
-                            target="_blank">BOOK WITH VIATOR</a>
+                            target="_blank">READ MORE ABOUT CABRIO DAY TRIP</a>
                     </div>
                 </div>
             </div>
@@ -316,25 +320,24 @@
         <div class="container-lg">
             <hr>
             <h2 class="text-center my-4 f-bold text-center" id="included">What's included</h2>
-            <div class="row justify-content-around align-items-center">
-                <div class="col-3"></div>
-                <div class="col-md-3 text-center">
+            <ul class="d-flex flex-row align-items-center p-0 m-0 justify-content-center">
+                <li class="items list-unstyled mx-3 d-flex flex-row align-items-center me-4">
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                    class="bi bi-check" viewBox="0 0 16 16">
-                    <path
-                        d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
-                </svg>Coffee/tea,water
-                </div>
-                <div class="col-md-3 text-center">
+                        class="bi bi-check" viewBox="0 0 16 16">
+                        <path
+                            d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z" />
+                    </svg>Coffee/tea,water
+                </li>
+
+                <li class="items list-unstyled mx-3 d-flex flex-row align-items-center">
                     <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"
                         class="icon__3e6C icon__15Eg greyCross__2ICl">
                         <path
                             d="M3.97 14.97a.75.75 0 101.06 1.06L10 11.06l4.97 4.97a.75.75 0 101.06-1.06L11.06 10l4.97-4.97a.75.75 0 00-1.06-1.06L10 8.94 5.03 3.97a.75.75 0 00-1.06 1.06L8.94 10l-4.97 4.97z">
                         </path>
                     </svg>Entrance fee in the Temple of Poseidon
-                </div>
-                <div class="col-3"></div>
-            </div>
+                </li>
+            </ul>
 
             <hr>
 
@@ -396,6 +399,8 @@
                             policy*</a></label>
                     <div class="danger-txt f-bold">You must accept the privacy policy</div>
                 </div>
+
+                <div class="g-recaptcha" data-sitekey="6LeQzygpAAAAACXyyZOC_JQ6nvUifAi-rZuQt4Rt"></div>
 
                 <div class="d-flex flex-row justify-content-between align-items-center">
                     <a href="#" class="f-bold text-decoration-none button" id="closeModal">CLOSE</a>

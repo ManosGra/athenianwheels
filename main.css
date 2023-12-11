@@ -3,13 +3,18 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
+
 @media screen and (max-width: 420px) {
   body {
-    width: 100vw;
-    overflow-x: hidden;
+    width: 100vh;
   }
 }
 
+@media screen and (max-width: 575px) {
+  body {
+    width: 100vh;
+  }
+}
 
 .box {
   opacity: 0;
@@ -55,8 +60,7 @@ header.active {
 @media screen and (max-width: 992px) {
   header {
     display: none;
-    width: 100vw;
-  } 
+  }
 }
 
 .item-list {
@@ -129,7 +133,6 @@ header.active {
 @media screen and (max-width: 992px) {
   .responsive-header {
     display: block;
-    width: 100vw;
   }
 }
 
@@ -170,63 +173,71 @@ header.active {
   padding: 350px 0;
   position: relative;
   height: 100vh;
+}
 
-  .hero-content {
-    position: absolute;
-    top: 0;
-    bottom: 0;
+.hero-content h1 {
+  font-size: 95px !important;
+}
+
+.hero::before {
+  position: absolute;
+  content: "";
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0.4;
+}
+
+.hero-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0 221px;
+}
+
+.hero-content h1{
+  padding: 140px 0px 90px 0px;
+}
+
+.hero-content .scroll-btn{
+  padding-bottom: 70px;
+}
+
+@media screen and (max-width: 420px) {
+  .hero {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hero {
     width: 100%;
-    height: 100%;
-    padding: 0 221px;
+    height: 100vh;
   }
 
   .hero-content h1 {
-    font-size: 95px !important;
+    font-size: 40px !important;
   }
+}
 
-  &.hero::before {
-    position: absolute;
-    content: "";
-    background-color: black;
+@media screen and (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 60px !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .hero {
     width: 100%;
-    height: 100%;
-    z-index: 0;
-    top: 0;
-    bottom: 0;
-    opacity: 0.4;
   }
 
-  @media screen and (max-width: 420px) {
-    .hero {
-      height: 100vh;
-    }
-  }
-
-  @media screen and (max-width: 576px) {
-    .hero {
-      width: 100%;
-      height: 100vh;
-    }
-
-    .hero-content h1 {
-      font-size: 40px !important;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .hero-content h1 {
-      font-size: 60px !important;
-    }
-  }
-
-  @media screen and (max-width: 992px) {
-    .hero {
-      width: 100%;
-    }
-
-    .hero-content {
-      padding: 0 40px !important;
-    }
+  .hero-content {
+    padding: 0 40px !important;
   }
 }
 
@@ -274,8 +285,7 @@ header.active {
   transform-origin: center;
   transform-style: preserve-3d;
   transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
-  -webkit-box-reflect: below 5px linear-gradient(transparent, transparent, #004) ;
-  overflow-x: hidden;
+  -webkit-box-reflect: below 5px linear-gradient(transparent, transparent, #004);
 }
 
 .image-slider-box span img {
@@ -369,7 +379,7 @@ header.active {
 
 @media screen and (max-width:576px) {
   .btns .btn {
-    margin: 0;
+    margin: 0 25px;
   }
 
   .btns .btn::before {
@@ -706,9 +716,6 @@ img {
     opacity: 1;
     z-index: 5;
   }
-  .modal-inner{
-    min-width: 350px;
-  }
 
   .modal-inner h2 {
     font-size: 33px;
@@ -863,7 +870,7 @@ footer {
 
 @media screen and (max-width: 420px) {
   footer {
-    width: 100vw;
+    width: 100vh;
     text-align: center !important;
   }
 }
