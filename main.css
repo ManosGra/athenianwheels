@@ -231,8 +231,8 @@ header.active {
   }
 }
 
-.hero .scroll-btn{
-  padding-top: 100px;
+.hero-items{
+  padding: 140px 0px 90px;
 }
 
 @media screen and (max-width: 1200px) {
