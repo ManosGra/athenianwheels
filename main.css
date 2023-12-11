@@ -254,6 +254,10 @@ header.active {
   .content-start{
     margin: 100px 0;
   }
+
+  .content-start h1{
+    font-size: 43px!important;
+  }
 }
 
 .slider-container {
