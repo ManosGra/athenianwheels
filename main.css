@@ -648,46 +648,46 @@ img {
   background-color: rgba(0, 0, 0, 0.626);
   transition: all 0.3s ease-in-out;
   z-index: -1;
-}
 
-.modal-inner {
-  background-color: #0a3e5c;
-  padding: 20px 50px;
-  border: 2px solid white;
-  border-radius: 5px;
-  min-width: 500px;
-}
+  .modal-inner {
+    background-color: #0a3e5c;
+    padding: 20px 50px;
+    border: 2px solid white;
+    border-radius: 5px;
+    min-width: 500px;
+  }
 
-.field {
-  margin: 10px 0;
-  color: white;
-}
+  .field {
+    margin: 10px 0;
+    color: white;
+  }
 
-.field a {
-  background: transparent;
-  padding: 0;
-  color: white;
-}
+  .field a {
+    background: transparent;
+    padding: 0;
+    color: white;
+  }
 
-.checkbox {
-  color: white !important;
-}
+  .checkbox {
+    color: white !important;
+  }
 
-.field p {
-  font-size: 12px;
-}
+  .field p {
+    font-size: 12px;
+  }
 
-.danger-txt {
-  color: #d93025;
-  margin-top: -5px;
-  font-size: 10px;
-  letter-spacing: 0.8px;
-  opacity: 0;
-}
+  .danger-txt {
+    color: #d93025;
+    margin-top: -5px;
+    font-size: 10px;
+    letter-spacing: 0.8px;
+    opacity: 0;
+  }
 
-.contact.open {
-  opacity: 1;
-  z-index: 5;
+  &.contact.open {
+    opacity: 1;
+    z-index: 5;
+  }
 }
 
 @media screen and (max-width: 768px) {
