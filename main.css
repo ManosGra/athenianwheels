@@ -245,6 +245,12 @@ header.active {
   margin: 200px 0;
 }
 
+@media screen and (max-width: 420px) {
+  .content-start{
+    margin: 100px 0;
+  }
+}
+
 .slider-container {
   position: relative;
   width: 100%;
