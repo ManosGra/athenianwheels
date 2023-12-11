@@ -618,9 +618,6 @@ img {
   margin-bottom: 70px;
 }
 
-.content-end ul li{
-  font-size: 11px;
-}
 
 @media screen and (max-width: 992px) {
   .content-end h5 {
@@ -636,6 +633,7 @@ img {
 
   .content-end li {
     list-style: none;
+    font-size: 11px;
   }
 
   .content-end .items {
