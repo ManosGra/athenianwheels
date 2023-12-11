@@ -442,7 +442,7 @@ header.active {
 
 @media screen and (max-width: 420px) {
   .content h2 {
-    font-size: 45px;
+    font-size: 35px;
   }
 }
 
@@ -538,7 +538,7 @@ header.active {
 
 @media screen and (max-width: 420px) {
   .main-content-left h2 {
-    font-size: 45px;
+    font-size: 35px;
   }
 }
 
@@ -600,7 +600,7 @@ img {
 
 @media screen and (max-width: 420px) {
   .main-content-right h2 {
-    font-size: 45px;
+    font-size: 35px;
   }
 }
 
