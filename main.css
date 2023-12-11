@@ -196,6 +196,9 @@ header.active {
     opacity: 0.4;
   }
 
+  .hero .scroll-btn{
+    padding-top: 150px;
+  }
   @media screen and (max-width: 420px) {
     .hero {
       height: 100vh;
