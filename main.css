@@ -3,7 +3,6 @@ body {
   padding: 0;
   box-sizing: border-box;
 }
-
 @media screen and (max-width: 420px) {
   body {
     width: 100vw;
@@ -11,11 +10,6 @@ body {
   }
 }
 
-@media screen and (max-width: 575px) {
-  body {
-    width: 100vw;
-  }
-}
 
 .box {
   opacity: 0;
@@ -61,7 +55,8 @@ header.active {
 @media screen and (max-width: 992px) {
   header {
     display: none;
-  }
+    width: 100vw;
+  } 
 }
 
 .item-list {
@@ -93,42 +88,42 @@ header.active {
   padding: 20px 0;
   z-index: 2;
   width: 100%;
-}
 
-.hamburger {
-  display: block;
-  width: 35px;
-  cursor: pointer;
+  .hamburger {
+    display: block;
+    width: 35px;
+    cursor: pointer;
 
-  appearance: none;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  position: relative;
-}
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    position: relative;
+  }
 
-.hamburger .bar,
-.hamburger::after,
-.hamburger::before {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 3px;
-  background-color: white;
-  margin: 6px 0;
-  transition: 0.4s;
-}
+  .hamburger .bar,
+  .hamburger::after,
+  .hamburger::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
 
-.hamburger.is-active::before {
-  transform: rotate(-45deg) translate(-8px, 6px);
-}
+  .hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
 
-.hamburger.is-active::after {
-  transform: rotate(45deg) translate(-6px, -5px);
-}
+  .hamburger.is-active::after {
+    transform: rotate(45deg) translate(-6px, -5px);
+  }
 
-.hamburger.is-active .bar {
-  opacity: 0;
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -175,71 +170,69 @@ header.active {
   padding: 350px 0;
   position: relative;
   height: 100vh;
-}
-
-.hero-content h1 {
-  font-size: 95px !important;
-}
-
-.hero::before {
-  position: absolute;
-  content: "";
-  background-color: black;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  top: 0;
-  bottom: 0;
-  opacity: 0.4;
-}
-
-.hero-content {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0 221px;
-}
-
-.hero-content h1 {
-  padding: 140px 0px 90px 0px;
-}
-
-.hero-content .scroll-btn {
-  padding-bottom: 70px;
-}
-
-@media screen and (max-width: 420px) {
-  .hero {
-    height: 100vh;
-  }
-}
-
-@media screen and (max-width: 576px) {
-  .hero {
-    width: 100%;
-    height: 100vh;
-  }
-
-  .hero-content h1 {
-    font-size: 40px !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 60px !important;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .hero {
-    width: 100%;
-  }
 
   .hero-content {
-    padding: 0 40px !important;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 221px;
+  }
+
+  .hero-content h1 {
+    font-size: 95px !important;
+  }
+
+  &.hero::before {
+    position: absolute;
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.4;
+  }
+
+  @media screen and (max-width: 420px) {
+    .hero {
+      height: 100vh;
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    .hero {
+      width: 100%;
+      height: 100vh;
+    }
+
+    .hero-content h1 {
+      font-size: 40px !important;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 60px !important;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .hero {
+      width: 100%;
+    }
+
+    .hero-content {
+      padding: 0 40px !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero-content {
+    padding: 0 121px !important;
   }
 }
 
@@ -281,7 +274,8 @@ header.active {
   transform-origin: center;
   transform-style: preserve-3d;
   transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
-  -webkit-box-reflect: below 5px linear-gradient(transparent, transparent, #004);
+  -webkit-box-reflect: below 5px linear-gradient(transparent, transparent, #004) ;
+  overflow-x: hidden;
 }
 
 .image-slider-box span img {
@@ -375,7 +369,7 @@ header.active {
 
 @media screen and (max-width:576px) {
   .btns .btn {
-    margin: 0 25px;
+    margin: 0;
   }
 
   .btns .btn::before {
@@ -712,6 +706,9 @@ img {
     opacity: 1;
     z-index: 5;
   }
+  .modal-inner{
+    min-width: 350px;
+  }
 
   .modal-inner h2 {
     font-size: 33px;
@@ -844,13 +841,13 @@ button {
   color: #0a364f;
   padding: 10px;
   border: transparent;
-}
 
-.button:hover {
-  background-color: transparent;
-  color: white;
-  transition: 1s;
-  border-radius: 5px;
+  &.button:hover {
+    background-color: transparent;
+    color: white;
+    transition: 1s;
+    border-radius: 5px;
+  }
 }
 
 footer {
