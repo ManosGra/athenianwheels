@@ -620,7 +620,7 @@ img {
 
 
 @media screen and (max-width: 992px) {
-  .content-end h5 {
+  .content-end h2 {
     margin: 0 !important;
     padding: 0 !important;
     padding-bottom: 20px !important;
@@ -645,8 +645,8 @@ img {
 }
 
 @media screen and (max-width: 420px) {
-  .content-end h5 {
-    font-size: 45px !important;
+  .content-end h2 {
+    font-size: 40px !important;
     padding-bottom: 30px !important;
   }
 
