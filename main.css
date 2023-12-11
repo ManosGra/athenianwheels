@@ -618,6 +618,10 @@ img {
   margin-bottom: 70px;
 }
 
+.content-end ul li{
+  font-size: 11px;
+}
+
 @media screen and (max-width: 992px) {
   .content-end h5 {
     margin: 0 !important;
