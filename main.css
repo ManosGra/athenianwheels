@@ -711,10 +711,6 @@ img {
     z-index: 5;
   }
 
-  .modal-inner {
-    min-width: 350px!important;
-  }
-
   .modal-inner h2 {
     font-size: 33px;
   }
