@@ -848,13 +848,13 @@ button {
   color: #0a364f;
   padding: 10px;
   border: transparent;
+}
 
-  &.button:hover {
-    background-color: transparent;
-    color: white;
-    transition: 1s;
-    border-radius: 5px;
-  }
+.button:hover {
+  background-color: transparent;
+  color: white;
+  transition: 1s;
+  border-radius: 5px;
 }
 
 footer {
