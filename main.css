@@ -241,12 +241,6 @@ header.active {
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .hero-content {
-    padding: 0 121px !important;
-  }
-}
-
 .content-start {
   margin: 200px 0;
 }
