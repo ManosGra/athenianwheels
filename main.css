@@ -93,42 +93,42 @@ header.active {
   padding: 20px 0;
   z-index: 2;
   width: 100%;
+}
 
-  .hamburger {
-    display: block;
-    width: 35px;
-    cursor: pointer;
+.hamburger {
+  display: block;
+  width: 35px;
+  cursor: pointer;
 
-    appearance: none;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    position: relative;
-  }
+  appearance: none;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  position: relative;
+}
 
-  .hamburger .bar,
-  .hamburger::after,
-  .hamburger::before {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 3px;
-    background-color: white;
-    margin: 6px 0;
-    transition: 0.4s;
-  }
+.hamburger .bar,
+.hamburger::after,
+.hamburger::before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  margin: 6px 0;
+  transition: 0.4s;
+}
 
-  .hamburger.is-active::before {
-    transform: rotate(-45deg) translate(-8px, 6px);
-  }
+.hamburger.is-active::before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
 
-  .hamburger.is-active::after {
-    transform: rotate(45deg) translate(-6px, -5px);
-  }
+.hamburger.is-active::after {
+  transform: rotate(45deg) translate(-6px, -5px);
+}
 
-  .hamburger.is-active .bar {
-    opacity: 0;
-  }
+.hamburger.is-active .bar {
+  opacity: 0;
 }
 
 @media screen and (max-width: 992px) {
@@ -202,11 +202,11 @@ header.active {
   padding: 0 221px;
 }
 
-.hero-content h1{
+.hero-content h1 {
   padding: 140px 0px 90px 0px;
 }
 
-.hero-content .scroll-btn{
+.hero-content .scroll-btn {
   padding-bottom: 70px;
 }
 
