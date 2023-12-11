@@ -196,7 +196,7 @@ header.active {
     opacity: 0.4;
   }
 
-  .hero .scroll-btn{
+  .hero-content .scroll-btn{
     padding-top: 100px;
   }
   @media screen and (max-width: 420px) {
