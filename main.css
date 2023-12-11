@@ -865,6 +865,10 @@ footer {
     width: 100vw;
     text-align: center !important;
   }
+
+  footer p{
+    font-size: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
