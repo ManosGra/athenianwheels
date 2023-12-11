@@ -245,6 +245,11 @@ header.active {
   margin: 100px 0;
 }
 
+.content-start h1{
+  font-size: 40px!important;
+}
+
+
 @media screen and (max-width: 420px) {
   .content-start{
     margin: 100px 0;
