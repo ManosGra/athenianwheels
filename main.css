@@ -92,7 +92,7 @@ header.active {
 
   .hamburger {
     display: block;
-    width: 35px;
+    width: 50px;
     cursor: pointer;
 
     appearance: none;
