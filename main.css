@@ -254,7 +254,7 @@ header.active {
   width: 8px;
   height: 8px;
   top: 0;
-  margin: 20px 0 0 4px;
+  margin: 10px 0 0 4px;
   background-color: white;
   border-radius: 10px;
   bottom: 0;
@@ -264,7 +264,7 @@ header.active {
 
 @keyframes move-down{
   100%{
-    transform: translateY(10px);
+    transform: translateY(8px);
     opacity: 0;
   }
 }
