@@ -271,7 +271,7 @@ header.active {
   content: '';
   position: absolute;
   width: 100%;
-  min-height: 550px;
+  min-height: 800px;
   background-color: lightgray;
   top: -110px;
   z-index: -2;
