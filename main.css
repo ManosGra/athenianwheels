@@ -245,18 +245,18 @@ header.active {
   margin: 100px 0;
 }
 
-.content-start h1{
-  font-size: 48px!important;
+.content-start h1 {
+  font-size: 48px !important;
 }
 
 
 @media screen and (max-width: 420px) {
-  .content-start{
+  .content-start {
     margin: 100px 0;
   }
 
-  .content-start h1{
-    font-size: 43px!important;
+  .content-start h1 {
+    font-size: 43px !important;
   }
 }
 
