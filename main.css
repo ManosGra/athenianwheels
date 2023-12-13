@@ -241,6 +241,34 @@ header.active {
   }
 }
 
+.action-btn{
+  position: relative;
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 5px 8px;
+}
+
+.action-btn::before{
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 0;
+  margin: 10px 4px;
+  background-color: white;
+  border-radius: 10px;
+  bottom: 0;
+  animation: move-down 2s infinite;
+  left: 0;
+}
+
+@keyframes move-down{
+  100%{
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}
+
 .content-start {
   margin: 100px 0;
 }
