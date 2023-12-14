@@ -645,6 +645,7 @@ img {
 
 .driver-info{
   min-height: 400px;
+  margin-bottom: 50px;
 }
 
 .image{
@@ -674,7 +675,7 @@ img {
 @media screen and (max-width: 420px) {
   .driver-info{
     min-height: 760px;
-    margin-bottom: 120px;
+    margin-bottom: 160px;
   }
   .text{
     max-width: 500px;
