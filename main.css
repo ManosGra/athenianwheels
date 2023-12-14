@@ -643,6 +643,44 @@ img {
   }
 }
 
+.driver-info{
+  min-height: 400px;
+}
+
+.image{
+  max-width: 100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.img{
+  border: 2px solid black;
+  border-radius: 50%;
+}
+
+.text{
+  max-width: 550px;
+  margin: 0 auto;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding:10px ;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  top: 50px;
+}
+
+@media screen and (max-width: 420px) {
+  .driver-info{
+    min-height: 680px;
+    margin-bottom: 50px;
+  }
+  .text{
+    max-width: 500px;
+  }
+}
+
 .content-end {
   margin-bottom: 70px;
 }
