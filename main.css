@@ -673,7 +673,7 @@ img {
 
 @media screen and (max-width: 420px) {
   .driver-info{
-    min-height: 680px;
+    min-height: 760px;
     margin-bottom: 120px;
   }
   .text{
