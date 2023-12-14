@@ -675,6 +675,8 @@ img {
   .driver-info{
     min-height: 680px;
     margin-bottom: 120px;
+    border-bottom: none;
+    border-radius: 0;
   }
   .text{
     max-width: 500px;
