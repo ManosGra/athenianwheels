@@ -679,6 +679,8 @@ img {
   .text{
     max-width: 500px;
     border-bottom: none;
+    border-left: none;
+    border-right: none;
     border-radius: 0;
   }
 }
