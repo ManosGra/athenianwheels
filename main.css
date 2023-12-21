@@ -672,6 +672,10 @@ img {
   top: 50px;
 }
 
+.driver-text{
+  margin: 70px 0 40px 0;
+}
+
 @media screen and (max-width: 420px) {
   .driver-info{
     min-height: 760px;
